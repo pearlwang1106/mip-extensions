@@ -30,6 +30,21 @@ mip-semi-fixed 滑动悬浮组件
 </mip-semi-fixed>
 ```
 
+### 添加关闭按钮
+
+1、给 mip-semi-fixed 标签添加一个自定义的 id，如id="mip-semi-fixed-id"
+
+2、给需要点击关闭悬浮元素的标签添加属性 on="tap:mip-semi-fixed-id.close"
+
+```html
+<mip-semi-fixed id="mip-semi-fixed-id" threshold="150" fixedClassNames="fixedStyle">
+    <div mip-semi-fixed-container class="absoluteStyle">
+        MIP-SEMI-FIXED MIP-SEMI-FIXED
+        <div on="tap:mip-semi-fixed-id.close">我是关闭按钮</div>
+    </div>
+</mip-semi-fixed>
+```
+
 ## 属性
 
 ### threshold
